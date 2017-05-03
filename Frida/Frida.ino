@@ -60,6 +60,14 @@ void giraIzquierda(int vel) {
     digitalWrite(Pin2_IZQUIERDA, 0);
 }
 
+void frenar() {
+    digitalWrite(Pin1_DERECHA, 255);
+    digitalWrite(Pin1_IZQUIERDA, 255);
+
+    digitalWrite(Pin2_DERECHA, 255);
+    digitalWrite(Pin2_IZQUIERDA, 255);
+}
+
 
 // ULTRASONICOS
 int getUltrasonico(char cSentido) {
